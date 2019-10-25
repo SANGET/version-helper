@@ -1,11 +1,11 @@
 {
   "name": "version-helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "根据 git commit 记录获取构建数，组合 package 的 version 构成 app version 的 helper",
   "main": "index.js",
   "bin": {
-    "version-helper": "./bin/scripts.js",
-    "vh": "./bin/scripts.js"
+    "version-helper": "bin/script.js",
+    "vh": "bin/script.js"
   },
   "scripts": {
     "publish:ts": "npm publish ./dist",
@@ -13,16 +13,14 @@
     "copy-files-ts": "node ./scripts/copy-files-ts",
     "copy-files-bin": "cp -r ./bin ./dist/",
     "build:ts": "rm -rf ./dist; tsc; npm run copy-files-ts; npm run copy-files-bin",
-    "gen:version:for:demo": "vh gen --outdir react",
-    "docz:dev": "yarn gen:version:for:demo; yarn docz dev",
-    "docz:build": "yarn docz build"
+    "gen:version:for:demo": "vh gen --outdir react"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SANGET/version-helper.git"
   },
   "peerDependencies": {
-    "ukelli-ui": "3.1.x"
+    "ukelli-ui": "3.3.x"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",
@@ -30,7 +28,6 @@
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
     "basic-helper": "^3.0.7",
-    "docz": "^2.0.0-rc.57",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-react-app": "^5.0.2",
@@ -43,8 +40,9 @@
     "react-dom": "^16.8.6",
     "react-transition-group": "^2.5.0",
     "typescript": "3.6.4",
-    "ukelli-ui": "^3.1.0-rc14",
-    "unistore": "^3.1.0"
+    "ukelli-ui": "^3.3.0-rc1",
+    "unistore": "^3.1.0",
+    "version-helper": "^1.0.1"
   },
   "author": "Sanget",
   "license": "MIT",
