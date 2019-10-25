@@ -16,6 +16,7 @@ process.on('unhandledRejection', err => {
 });
 
 const spawn = require('cross-spawn');
+const path = require('path');
 const { version } = require('./common-config');
 
 const args = process.argv.slice(2);
@@ -35,7 +36,7 @@ switch (script) {
     const result = spawn.sync(
       'sh',
       nodeArgs
-        .concat(require.resolve('.././version/set-app-version.sh'))
+        .concat(path.resolve(__dirname, './set-app-version.sh'))
         .concat(args.slice(scriptIndex + 1)),
       { stdio: 'inherit' }
     );
