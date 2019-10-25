@@ -1,7 +1,0 @@
-{
-  "packageVersion": "PACKAGE_VERSION",
-  "buildVersion": "BUILD_VERSION",
-  "version": "VERSION",
-  "buildDate": "BUILD_DATE",
-  "gitHash": "GIT_HASH"
-}
