@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 
 import { ShowModal } from 'ukelli-ui/core/modal'
-import { TipPanel } from 'ukelli-ui/core/tip-panel'
+import { Alert } from 'ukelli-ui/core/alert'
 import { Notify } from 'ukelli-ui/core/notification'
 
 export interface VersionInfo {
@@ -51,7 +51,9 @@ class VersionChecker extends Component<VersionCheckerProps, VersionCheckerState>
 
     window.__VERSION = props.versionInfo;
 
-    version = version.trim();
+    version = version ? version.trim() : '';
+    if(!version) console.warn('需要传入 version');
+    
     this.errorCount = 0;
 
     this.state = {
@@ -121,7 +123,7 @@ class VersionChecker extends Component<VersionCheckerProps, VersionCheckerState>
             <p>{updateLog || '日常更新'}</p>
           </div>
           <hr />
-          <TipPanel
+          <Alert
             type="success"
             text="请确保已保存工作内容，页面即将刷新" />
         </div>
