@@ -8,8 +8,8 @@
     "vh": "bin/script.js"
   },
   "scripts": {
-    "publish:ts": "npm publish ./dist",
-    "release": "npm run build:ts; npm run publish:ts",
+    "publish:build": "npm publish ./dist --access public",
+    "release": "npm run build:ts; npm run publish:build",
     "copy-files-ts": "node ./scripts/copy-files-ts",
     "copy-files-bin": "cp -r ./bin ./dist/",
     "build:ts": "rm -rf ./dist; tsc; npm run copy-files-ts; npm run copy-files-bin",
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/SANGET/version-helper.git"
   },
   "peerDependencies": {
-    "ukelli-ui": "3.3.x"
+    "@dear-ui/all": "4.0.x"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",
@@ -40,9 +40,8 @@
     "react-dom": "^16.8.6",
     "react-transition-group": "^2.5.0",
     "typescript": "3.6.4",
-    "ukelli-ui": "^3.3.0-rc1",
-    "unistore": "^3.1.0",
-    "version-helper": "^1.0.1"
+    "@dear-ui/all": "^4.0.0-alpha1",
+    "unistore": "^3.1.0"
   },
   "author": "Sanget",
   "license": "MIT",

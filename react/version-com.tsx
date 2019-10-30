@@ -2,9 +2,9 @@
 
 import React, { Component } from 'react';
 
-import { ShowModal } from 'ukelli-ui/core/modal'
-import { Alert } from 'ukelli-ui/core/alert'
-import { Notify } from 'ukelli-ui/core/notification'
+import { ShowModal } from '@dear-ui/all/core/modal'
+import { Alert } from '@dear-ui/all/core/alert'
+import { Notify } from '@dear-ui/all/core/notification'
 
 export interface VersionInfo {
   packageVersion: string;
