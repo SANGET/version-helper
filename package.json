@@ -1,6 +1,6 @@
 {
   "name": "version-helper",
-  "version": "1.1.0",
+  "version": "1.2.0-alpha0",
   "description": "根据 git commit 记录获取构建数，组合 package 的 version 构成 app version 的 helper",
   "main": "index.js",
   "bin": {
