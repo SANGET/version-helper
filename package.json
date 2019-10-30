@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SANGET/version-helper.git"
+    "url": "git+https://github.com/minimal-studio/version-helper.git"
   },
   "peerDependencies": {
     "@dear-ui/all": "4.0.x"
@@ -46,7 +46,7 @@
   "author": "Sanget",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SANGET/version-helper/issues"
+    "url": "https://github.com/minimal-studio/version-helper/issues"
   },
-  "homepage": "https://github.com/SANGET/version-helper#readme"
+  "homepage": "https://github.com/minimal-studio/version-helper#readme"
 }
