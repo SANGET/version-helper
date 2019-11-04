@@ -20,7 +20,7 @@
     "url": "git+https://github.com/minimal-studio/version-helper.git"
   },
   "peerDependencies": {
-    "@dear-ui/all": "4.0.x"
+    "@dear-ui/core": "4.0.x"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",
@@ -40,7 +40,7 @@
     "react-dom": "^16.8.6",
     "react-transition-group": "^2.5.0",
     "typescript": "3.6.4",
-    "@dear-ui/all": "^4.0.0-alpha1",
+    "@dear-ui/core": "^4.0.0-alpha1.1",
     "unistore": "^3.1.0"
   },
   "author": "Sanget",
