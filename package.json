@@ -1,6 +1,6 @@
 {
   "name": "version-helper",
-  "version": "1.2.0-alpha0",
+  "version": "1.2.0-alpha1.0",
   "description": "根据 git commit 记录获取构建数，组合 package 的 version 构成 app version 的 helper.",
   "main": "index.js",
   "bin": {
@@ -20,7 +20,7 @@
     "url": "git+https://github.com/minimal-studio/version-helper.git"
   },
   "peerDependencies": {
-    "@dear-ui/core": "4.0.x"
+    "@deer-ui/core": "4.0.x"
   },
   "devDependencies": {
     "@types/react": "^16.8.17",
@@ -40,7 +40,7 @@
     "react-dom": "^16.8.6",
     "react-transition-group": "^2.5.0",
     "typescript": "3.6.4",
-    "@dear-ui/core": "^4.0.0-alpha1.1",
+    "@deer-ui/core": "^4.0.0-alpha3.1",
     "unistore": "^3.1.0"
   },
   "author": "Sanget",
