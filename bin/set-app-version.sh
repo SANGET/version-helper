@@ -25,8 +25,7 @@ echo "output dir is: $outdir"
 
 BASEDIR=$(dirname "$0")
 
-if [[ ! -d $outdir ]]
-then
+if [[ ! -d $outdir ]]; then
   mkdir $outdir
 fi
 
