@@ -41,7 +41,8 @@
     "react-dom": "^16.8.6",
     "react-transition-group": "^2.5.0",
     "typescript": "3.6.4",
-    "@deer-ui/core": "^4.0.0-alpha3.1",
+    "@deer-ui/core": "^4.0.0-rc4.8",
+    "version-helper": "^1.2.0-beta1.3",
     "unistore": "^3.1.0"
   },
   "author": "Sanget",
