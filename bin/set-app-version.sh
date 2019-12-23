@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # git checkout -f
 
@@ -14,7 +14,7 @@ echo "package version: $PACKAGE_VERSION"
 outdir_CMD="--outdir"
 outdir="$PWD/src"
 
-if [[ $2 = '--outdir' ]]; then
+if [ $2 = '--outdir' ]; then
   if [[ -n $3 ]]
   then
     outdir="$PWD/$3"
@@ -25,7 +25,7 @@ echo "output dir is: $outdir"
 
 BASEDIR=$(dirname "$0")
 
-if [[ ! -d $outdir ]]; then
+if [ ! -d $outdir ]; then
   mkdir -p $outdir
 fi
 
