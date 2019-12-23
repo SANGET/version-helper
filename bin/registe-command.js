@@ -34,7 +34,7 @@ switch (script) {
   case 'gen':
   case 'gen:version':
     const result = spawn.sync(
-      'sh',
+      'bash',
       nodeArgs
         .concat(path.resolve(__dirname, './set-app-version.sh'))
         .concat(args.slice(scriptIndex + 1)),

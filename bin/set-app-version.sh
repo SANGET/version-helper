@@ -26,7 +26,7 @@ echo "output dir is: $outdir"
 BASEDIR=$(dirname "$0")
 
 if [[ ! -d $outdir ]]; then
-  mkdir $outdir
+  mkdir -p $outdir
 fi
 
 target_version="$outdir/version.json"
