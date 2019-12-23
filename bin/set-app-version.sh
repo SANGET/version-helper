@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # git checkout -f
 
@@ -43,11 +43,11 @@ git_hash=`awk 'NR==1 {print $1}' $git_log_file`
 num_ver=`awk 'END{print NR}' $git_log_file`
 
 # 写入版本模版文件
-sed -i -e 's#PACKAGE_VERSION#'$PACKAGE_VERSION'#g' $target_version
-sed -i -e 's#BUILD_VERSION#'$num_ver'#g' $target_version
-sed -i -e 's#VERSION#'$PACKAGE_VERSION+$num_ver'#g' $target_version
-sed -i -e 's#BUILD_DATE#'$DATE'#g' $target_version
-sed -i -e 's#GIT_HASH#'$git_hash'#g' $target_version
+sed -i -e "s#PACKAGE_VERSION#${PACKAGE_VERSION}#g" $target_version
+sed -i -e "s#BUILD_VERSION#${num_ver}#g" $target_version
+sed -i -e "s#VERSION#$PACKAGE_VERSION+$num_ver#g" $target_version
+sed -i -e "s#BUILD_DATE#${DATE}#g" $target_version
+sed -i -e "s#GIT_HASH#${git_hash}#g" $target_version
 
 # 输出版本信息
 echo "-------------------"
