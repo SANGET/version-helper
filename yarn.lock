@@ -25,10 +25,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@deer-ui/core@^4.0.0-alpha3.1":
-  version "4.0.0-alpha3.1"
-  resolved "https://registry.yarnpkg.com/@deer-ui/core/-/core-4.0.0-alpha3.1.tgz#04aab0e49681be7cfc8e16194f01846914928c75"
-  integrity sha512-BvYG8orJla6Bhb9TLsjnIKl06MopEt1MsnwORNFUfcz53ag6kHunMKuDwIePDXMoPR/s8zYJAORrD+MRf1CAFQ==
+"@deer-ui/core@^4.0.0-rc4.8":
+  version "4.0.0-rc4.8"
+  resolved "https://registry.yarnpkg.com/@deer-ui/core/-/core-4.0.0-rc4.8.tgz#58b8b6882788c690e0a1f08767e6e91ef5b6daa2"
+  integrity sha512-xZ33pQ0Mlvw8fHXDNaLoppYuIXTN2e/yvJDjnCDX01P5mYnJAfOBwSgDmdKT0S20FT87WIm4Lj4Ib2HpCy0Rgw==
   dependencies:
     classnames "^2.2.6"
 
