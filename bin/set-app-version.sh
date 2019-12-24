@@ -14,10 +14,8 @@ echo "package version: $PACKAGE_VERSION"
 outdir_CMD="--outdir"
 outdir="$PWD/src"
 
-if [[ $2 = $outdir_CMD ]]; then
-  echo 'spec outdir 1'
-  if [[ -n $3 ]]; then
-    echo 'spec outdir 2'
+if [ $2 = $outdir_CMD ]; then
+  if [ -n $3 ]; then
     outdir="$PWD/$3"
   fi
 fi
@@ -26,7 +24,7 @@ echo "output dir is: $outdir"
 
 BASEDIR=$(dirname "$0")
 
-if [[ ! -d $outdir ]]; then
+if [ ! -d $outdir ]; then
   mkdir -p $outdir
 fi
 
