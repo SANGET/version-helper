@@ -8,7 +8,7 @@
     "vh": "bin/script.js"
   },
   "scripts": {
-    "set:version": "vh gen --outdir src",
+    "set:version": "vh gen --outdir public",
     "publish:build": "npm publish ./dist --access public",
     "release": "npm run build:ts; npm run publish:build",
     "copy-files-ts": "node ./scripts/copy-files-ts",

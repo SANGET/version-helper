@@ -1,0 +1,3 @@
+[build]
+  command = "yarn; yarn set:version"
+  publish = "./public"
