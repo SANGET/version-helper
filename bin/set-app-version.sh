@@ -15,7 +15,9 @@ outdir_CMD="--outdir"
 outdir="$PWD/src"
 
 if [ $2 = '--outdir' ]; then
+  echo 'spec outdir 1'
   if [ -n $3 ]; then
+    echo 'spec outdir 2'
     outdir="$PWD/$3"
   fi
 fi
