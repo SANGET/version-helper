@@ -15,7 +15,7 @@ outdir_CMD="--outdir"
 outdir="$PWD/src"
 
 if [ $2 = '--outdir' ]; then
-  if [[ -n $3 ]]
+  if [ -n $3 ]
   then
     outdir="$PWD/$3"
   fi
